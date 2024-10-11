@@ -1,5 +1,7 @@
 function getElementOfArrayProperty(obj, key, index) {
     // your code here
+    if(!Array.isArray(obj[key]) || !obj[key][index]) return undefined
+    return obj[key][index]
 
 }
 

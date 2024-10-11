@@ -1,5 +1,9 @@
 function joinArrayOfArrays(arr) {
   // your code here
+  let auxArr = []
+  arr.forEach(e => { auxArr = auxArr.concat(e)
+  });
+  return auxArr
   
 }
 

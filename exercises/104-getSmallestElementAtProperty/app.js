@@ -1,6 +1,8 @@
 function getSmallestElementAtProperty(obj, key) {
     // your code here
-  
+  if (!Array.isArray(obj[key]) || obj[key].length ===0) return []
+  let smalest = Math.min(...obj[key])
+  return smalest
 }
 
 let obj = {
